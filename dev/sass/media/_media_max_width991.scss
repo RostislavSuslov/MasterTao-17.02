@@ -62,18 +62,16 @@
 
         }
         
-        .btn-lg {
-            
-        }
 
         .slick-list {
-            margin: 0px -20px;
+            margin: 0 -10px;
             border-radius: 0;
         }
         .slick-slide {
             border-radius: 0;
             height: calc(100vh - 72px);
             padding: 26vh 0 228px;
+         
             &:before {
                 content: "";
                 left: 0;
@@ -84,7 +82,7 @@
                 background: linear-gradient(180deg, rgb(4 5 17 / 1%), rgb(4 5 17 / 15%));
             }
             .container {
-                z-index: 1;
+                z-index: 1; 
                 position: relative;
             }
         }
