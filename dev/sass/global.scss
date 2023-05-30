@@ -321,9 +321,7 @@ section {
 
     &:nth-child(odd) {
         .template-title{
-            
             &:after {
-               
                 background-color: $color-primary;
             }
         }
@@ -372,12 +370,16 @@ section {
 
      /*type 3*/
      &.col-md-7 {
-        i {
-            width: 85px;
-            height: 2px;
-            background-color: #89C249;
-            display: inline-block;
-            margin-bottom: 12px;
+        h2 {
+            &:after {
+                content: "";
+                position: static;
+                display: inline-block;
+                width: 85px;
+                height: 2px;
+                margin: 10px 10px 10px 19px;
+                background-color: $color-secondary;
+            }
         }
         &:after {
             display: none;
