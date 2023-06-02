@@ -1,9 +1,15 @@
 @media screen and (max-width: 991px) {
+    section,.first-screen {
+        margin-bottom: 56px;
+    }
+ 
+
     .container {
         padding-left: 20px;
         padding-right: 20px;
 
     }
+
 
     header {
         .navbar {
@@ -11,8 +17,9 @@
             padding-bottom: 17px;
             margin-bottom: 0;
             transition: .3s;
+
             &.margin-bottom {
-              margin-bottom: 109px;  
+                margin-bottom: 109px;
             }
         }
 
@@ -49,29 +56,31 @@
 
     .first-screen {
         text-align: center;
+
         &__title {
             font-size: 32px;
             margin: 0 auto 10px;
             max-width: 295px;
-        } 
-        
+        }
+
         &__subtitle {
             font-size: 16px;
             margin: 0 auto 18px;
             max-width: 277px;
 
         }
-        
+
 
         .slick-list {
             margin: 0 -10px;
             border-radius: 0;
         }
+
         .slick-slide {
             border-radius: 0;
             height: calc(100vh - 72px);
             padding: 26vh 0 228px;
-         
+
             &:before {
                 content: "";
                 left: 0;
@@ -81,12 +90,67 @@
                 height: 100%;
                 background: linear-gradient(180deg, rgb(4 5 17 / 1%), rgb(4 5 17 / 15%));
             }
+
             .container {
-                z-index: 1; 
+                z-index: 1;
                 position: relative;
             }
         }
-        
+
     }
 
+    .template-title {
+        margin-bottom: 40px;
+        h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        &.text-left {
+            &:after {
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        &.col-lg-7 {
+            h2 {
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    top: calc(100% - 2px);
+                    transform: translate(-50%, 0);
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .calculation {
+        margin-bottom: 60px;
+        .container {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .calculation-form {
+        margin: 0 auto;
+        padding: 48px 27px 34px;
+    }
+
+    .padding-top {
+        padding-top: 9px;
+    }
+
+    #file-name {
+        margin-top: 5px;
+        margin-bottom: 12px;
+
+    }
 }

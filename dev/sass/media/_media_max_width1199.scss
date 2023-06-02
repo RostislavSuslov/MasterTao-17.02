@@ -5,6 +5,9 @@
             background-position: 20px;
         }
     } 
+    .calculation .container:after {
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 1199px) {
