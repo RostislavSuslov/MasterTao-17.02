@@ -2,12 +2,25 @@
     section,.first-screen {
         margin-bottom: 56px;
     }
- 
+
+    section{
+        &.container-fluid,
+        &.advantages.container-fluid {
+            padding: 55px 0 60px;
+
+            &:before {
+                left: 0;
+                right: 0;
+                border-radius: 0;
+            }
+        }
+      
+    }
+
 
     .container {
         padding-left: 20px;
         padding-right: 20px;
-
     }
 
 
@@ -126,10 +139,6 @@
         }
     }
 
-
-
-
-
     .calculation {
         margin-bottom: 60px;
         .container {
@@ -152,5 +161,17 @@
         margin-top: 5px;
         margin-bottom: 12px;
 
+    }
+    .advantages {
+        .slick-list {
+            padding-top: 12px;
+        }
+    }
+    .advantage-title {
+        max-width: 263px;
+        margin: 0 auto;
+    }
+    .slider-template {
+        width: 390px;
     }
 }
